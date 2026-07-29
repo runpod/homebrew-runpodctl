@@ -5,11 +5,11 @@
 class Runpodctl < Formula
   desc "runpodctl is a CLI tool to manage your GPU pods on RunPod."
   homepage "https://github.com/runpod/runpodctl"
-  version "2.7.3"
+  version "2.8.0"
 
   on_macos do
-    url "https://github.com/runpod/runpodctl/releases/download/v2.7.3/runpodctl-darwin-all.tar.gz"
-    sha256 "fc0a560ddc67f401d5fb9d77c18e89a2f276285b2a6537788a4dbf9087fdfa0f"
+    url "https://github.com/runpod/runpodctl/releases/download/v2.8.0/runpodctl-darwin-all.tar.gz"
+    sha256 "0690f17d74fe72db86b473f9096a97b0720c101691b01de85f9fb4b1bb3fdab4"
 
     define_method(:install) do
       bin.install "runpodctl"
@@ -18,15 +18,15 @@ class Runpodctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runpod/runpodctl/releases/download/v2.7.3/runpodctl-linux-amd64.tar.gz"
-      sha256 "e1bb8599be961133eab4b0674f9889e5e5924fac78f8289f4767f11bfdcf5fe1"
+      url "https://github.com/runpod/runpodctl/releases/download/v2.8.0/runpodctl-linux-amd64.tar.gz"
+      sha256 "39a367f85754a5695a095af569ea19a3ca88490066d8bb1598e0e29f680aa187"
       define_method(:install) do
         bin.install "runpodctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runpod/runpodctl/releases/download/v2.7.3/runpodctl-linux-arm64.tar.gz"
-      sha256 "94f241f99dcb66cfe42cdf2c964780588cf0909fb03c21c1142216b47f8f2561"
+      url "https://github.com/runpod/runpodctl/releases/download/v2.8.0/runpodctl-linux-arm64.tar.gz"
+      sha256 "7b76f350932aa020b89fcf38f57e6693e79ac1a87774ec1324e591641bb9c31a"
       define_method(:install) do
         bin.install "runpodctl"
       end
