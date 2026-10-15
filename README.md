@@ -1,5 +1,5 @@
-# RunPod CLI
-The brew repo for the [RunPod CLI](https://github.com/runpod/runpodctl).
+# Runpod CLI
+The brew repo for the [Runpod CLI](https://github.com/runpod/runpodctl).
 
 ## MacOS
 
