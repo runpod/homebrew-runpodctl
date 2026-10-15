@@ -1,0 +1,3 @@
+# request a review from devrel on every pr, including the formula and cask
+# prs that runpodctl's release workflow opens on each release.
+* @runpod/devrel
